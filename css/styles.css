@@ -1,0 +1,278 @@
+
+ 
+  .container {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 7%;
+    background-color: white;
+  }
+  
+  /* .ubunifu {
+    float: left;
+    width: max-content;
+    color: #C42B1B;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 800;
+  } */
+  
+  .ubunifu {
+    width: 120px;
+    /* display: flex; */
+    /* Adjust the margin as needed */
+/* padding-bottom: 50px;   */
+}
+  
+  .nav {
+    font-size: 15px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 200;
+    align-items: center;
+    display: flex; /* Add this to create a horizontal layout */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+    width: 100%;
+  }
+  
+  .navbar {
+    font-size: 9px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .nav a {
+    float: left;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+  }
+
+.hidden{
+  display: none;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+}
+
+.toggle{
+  display: none;
+}
+  
+  /* Style the search bar */
+  .search-bar {
+    display: flex;
+    align-items: center;
+    margin-left: 25%;
+  }
+  
+  .search-bar input {
+    width: 300px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .search-bar button {
+    background-color: #f68b1e;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+  
+  .search-bar button:hover {
+    background-color: #880F08;
+  }
+  
+  .account{
+    margin-left: 10%;
+  }
+  
+  
+  
+  
+  .button{
+      background-color: #ff214f;
+  }
+
+  *{
+    margin: 0;
+    padding: 0;
+  }
+
+  .home{
+    background-color: gray;
+width: 100%;
+height: 100vh;
+display: flex;
+flex-direction: column;
+  }
+    
+    .laptops{
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      margin-right: 10%;
+    }
+    .laptops div{
+      width: 29%;
+      height: 70%;
+      background-color: white;
+      border-radius: 12px;
+    }
+   
+    .laptops img{
+      width: 90%;
+      height: 60%;
+    }
+  
+    .laptops h3
+  
+    {
+      color: grey;
+      font-size: 25px;
+    }
+  
+  
+    .laptops h4
+    {
+  font-size: 25px;
+    }
+    .laptops p
+    {
+      color: grey;
+      font-size: 25px;
+    }
+
+    .laptops2{
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      margin-right: 10%;
+    }
+    .laptops2 div{
+      width: 29%;
+      height: 70%;
+      background-color: white;
+      border-radius: 12px;
+    }
+   
+    .laptops2 img{
+      width: 90%;
+      height: 60%;
+    }
+  
+    .laptops2 h3
+  
+    {
+      color: grey;
+      font-size: 25px;
+    }
+  
+  
+    .laptops2 h4
+    {
+  font-size: 25px;
+    }
+    .laptops2 p
+    {
+      color: grey;
+      font-size: 25px;
+    }
+  
+  
+  @media (max-width:820px){
+    .laptops{
+      flex-wrap: wrap;
+      /* height: max-content; */
+    }
+    .laptops div{
+      width: 60%;
+      margin-top: 20px;
+      height: 350px;
+    }
+
+    .laptops2 {
+      flex-wrap: wrap;
+      /* height: max-content; */
+    }
+    .laptops2 div{
+      width:60%;
+      margin-top: 20px;
+      height: 350px;
+    }
+    .nav{
+      display: none;
+    }
+.toggle{
+  display: block;
+  margin-left: 40%;
+  width: 32px;
+  height: 32px;
+}
+    
+.toggle:hover ~ .hidden{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+ height: max-content;
+}
+.hidden{
+  padding-left: 20px;
+}
+.hidden img{
+  width: 32px;
+  margin-top: 20px;
+}
+ 
+.hidden .ubunifu{
+  margin-left: 80px;
+  height: 50px;
+  width: 70px;
+}
+}
+.hidden a{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 200;
+
+ 
+}
+
+.hidden .search button {
+  background-color: #f68b1e;
+}
+  
+  @media(max-width:500px){
+  .laptops{
+    height: max-content;
+  }
+  
+    .laptops div{
+      width: 90%;
+    }
+
+    .laptops2{
+      height: max-content;
+    }
+    
+      .laptops2 div{
+        width: 90%;
+      }
+
+  }
+
+  
+
+
